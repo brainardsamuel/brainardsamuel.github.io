@@ -1,0 +1,137 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+	.squares{
+		height: 10%;
+		width: 100%;
+		background-color: gray;
+	}
+		.square{
+		height: 30%;
+		width: 100%;
+		float: left;
+		background-color: #555;
+	}
+	.mySlides {display:none;}
+	.container {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: 60%;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn1 {
+  position: absolute;
+  top: 10%;
+  bottom: 70%;
+  left: 40%;
+  right: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.container .btn2 {
+  position: absolute;
+  top: 30%;  
+  bottom:50%;
+  left: 40%;
+  right: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.container .btn3 {
+  position: absolute;
+  top: 60%;
+  bottom:20%;
+   left: 40%;
+  right: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+.container .btn:hover {
+  background-color: black;
+}
+</style>
+</head>
+<body bgcolor=GRAY>
+
+	<div class="squares">
+		<h1>BRAINARD SAMUEL</h1>
+		<div><img src="edit.jpg" width=30%></div>
+	</div>
+
+<div class="w3-content w3-section" style="max-width:100%">
+  <a href = "page2.html" ><img class="mySlides" src="brainard1.jpg" width=100%></a>
+  <a href = "page3"><img class="mySlides" src="brainard2.jpg" style="width:100%"></a>
+  <a href = "page3"><img class="mySlides" src="brainard3.jpg" style="width:100%"></a>
+</div>
+
+
+
+
+<div class="container">
+  <img src="grey.jpg" alt="Snow">
+  <div>
+  <button class="btn1"><a href="mailto:brainardjude7@gmail.com"><img src="mail.jpg"></button>
+  </div>
+  <div>
+  <button class="btn2"><img src="phone.jpg"></button>
+  </div>
+  <div>
+  <button class="btn3"><img src="youtube.jpg"></button>
+  </div>
+</div> 
+
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
