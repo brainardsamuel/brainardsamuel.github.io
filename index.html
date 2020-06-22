@@ -1,100 +1,68 @@
+
+<!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <style>
-	.squares{
-		height: 10%;
-		width: 100%;
-		background-color: gray;
-	}
-		.square{
-		height: 30%;
-		width: 100%;
-		float: left;
-		background-color: #555;
-	}
-	.mySlides {display:none;}
-	.container {
-  position: relative;
-  width: 50%;
+.topnav {
+  overflow: hidden;
+  background-color: #D3D3D3;
 }
 
-/* Make the image responsive */
-.container img {
-  width: 100%;
-  height: 60%;
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-/* Style the button and place it in the middle of the container/image */
-.container .btn1 {
-  position: absolute;
-  top: 10%;
-  bottom: 70%;
-  left: 40%;
-  right: 40%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.container .btn2 {
-  position: absolute;
-  top: 30%;  
-  bottom:50%;
-  left: 40%;
-  right: 40%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.container .btn3 {
-  position: absolute;
-  top: 60%;
-  bottom:20%;
-   left: 40%;
-  right: 40%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-
-
-.container .btn:hover {
-  background-color: black;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 </style>
-</head>
-<body bgcolor=GRAY>
 
+<title>JESUS</title>
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+  <h3 class="w3-bar-item">Menu</h3>
+  <a href="mailto:brainardjude7@gmail.com" class="w3-bar-item w3-button">mail</a>
+  <a href="https://www.youtube.com/channel/UCywp_NPulHR0l7VHEjDnIWg" class="w3-bar-item w3-button">youtube</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+
+
+<div style="margin-left:25%">
+
+<div class="topnav">
+
+
+<h3 >BRAINARD SAMUEL</h3>
+
+
+</div>
+
+
+<div class="w3-container w3-teal">
 	<div class="squares">
-		<h1>BRAINARD SAMUEL</h1>
+		
 		<div><img src="edit.jpg" width=30%></div>
 	</div>
 
-<div class="w3-content w3-section" style="max-width:100%">
-  <a href = "page2.html" ><img class="mySlides" src="brainard1.jpg" width=100%></a>
-  <a href = "page3"><img class="mySlides" src="brainard2.jpg" style="width:100%"></a>
-  <a href = "page3"><img class="mySlides" src="brainard3.jpg" style="width:100%"></a>
+<div class="w3-content w3-section" style="width: 1000px; height: 600px;">
+  <a href = "page2.html" ><img class="mySlides" src="IMG1.jpg" width="100%" height="45%"></a>
+  <a href = "page3"><img class="mySlides" src="IMG2.jpg" width="100%" height="45%"></a>
+  <a href = "page3"><img class="mySlides" src="IMG3.jpg" width="100%" height="45%"></a>
 </div>
 
 
@@ -132,6 +100,19 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
-</script>
+</script>  
+<h1>My Page</h1>
+</div>
+
+<img src="img_car.jpg" alt="Car" style="width:100%">
+
+<div class="w3-container">
+<h2>Sidebar Navigation Example</h2>
+<p>The sidebar with is set with "style="width:25%".</p>
+<p>The left margin of the page content is set to the same value.</p>
+</div>
+
+</div>
+     
 </body>
 </html>
